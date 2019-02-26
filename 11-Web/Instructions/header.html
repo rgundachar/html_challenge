@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+<!--   menu -->
+   <div class="">
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+            <div class="navbar-header header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <h1><a href="header.html">Latitude</a></h1>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                     Plot
+                     <span class="caret"></span>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="maxtemp.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="comparison.html">Comparison</a></li>
+                  <li><a href="convertcsv.htm">Data</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+   <!-------workspace -->
+   <div class="" style="border:1px solid gray;margin-top:10px;background-color:gray">
+   <div class="row" style="padding:30px">
+      <div class="well col-md-7 text-left" style="margin-right:30px">
+         <div class="row">
+            <div class="col-md-12 text-left">
+               <h1>Summary : Latitude vs. X</h1>
+               <br>
+            </div>
+         </div>
+         <div class="row">
+            <div class= "col-xs-3 col-md-6 text-center">
+               <!-- Left-aligned media object -->
+               <img class="img-responsive" src="resources/fig1.png" class="media-object" style="width:400px">
+            </div>
+            <div class="col-md-6 text-left">
+               <br><br> <br>
+               <p>The Purpose of this project was to analyze how weather changes as we go close to the Equator. To accomplish the analysis we first pulled
+                  the data from OpenweatherMap Api dataset on over 500 cities.After assembling the dataset , we used Matplotlib to plot various aspects of the weather vs the latitude.
+               </p>
+               <br> <br><br> <br>     
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12 text-left">
+               <br>
+               <p> Factors that we looked at included
+                  temperature,cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis as well as explanations
+                  and descriptions of any trends and correlations witnessed
+               </p>
+               <br> <br> 
+            </div>
+         </div>
+      </div>
+      <div>
+         <div class="well col-md-4 text-left" style="margin:0">
+            <div class="row">
+               <div class="col-md-12 text-left">
+                  <h2>Visualizations</h2>
+              </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-4 col-md-6" style="width:200px">
+                
+                     <div class=" thumbnail  column">  
+                  <a  href="maxtemp.html" >
+                  <figure><img class="img-responsive " src="resources/fig1.png" alt="Max Temp"></figure>
+                   </a>
+                  </div>
+               </div>
+               <div class="col-sm-4 col-md-6" style="width:200px">
+                     <div class="thumbnail  column">  
+                  <a href="cloudiness.html" >
+                        <figure><img class="img-responsive"  src="resources/fig3.png" alt="Cloudiness"></figure>
+                  </a>
+              
+               </div>
+               </div>
+         
+                <div class="col-sm-4 col-md-6" style="width:200px">
+                     <div class="thumbnail  column">  
+                  <a href="windspeed.html" >
+                        <figure> <img class="img-responsive"  src="resources/fig4.png" alt="Wind Speed"></figure>
+                  </a>
+               </div>
+               </div>
+               <div class="col-sm-4 col-md-6" style="width:200px">
+                     <div class="thumbnail  column">  
+                  <a href="humidity.html" >
+                        <figure><img class="img-responsive"  src="resources/fig2.png" alt="Humidity"></figure>
+                  </a>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   
+ 
+</body>
+<div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12 col-sm-6 col-xs-6">
+               
+                   <br><br><br><br>
+                   <div class="panel-footer blue"><center>© 2018 CopyRight Rutgers BootCamp</center></div>
+               
+           </div>
+</html>
