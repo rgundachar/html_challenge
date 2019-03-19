@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  
+
+
+
+<!--   menu -->
+<div class="">
+  <nav class="navbar navbar-default">
+     <div class="container-fluid">
+        <div class="navbar-header header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           </button>
+           <h1><a href="header.html">Latitude</a></h1>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+           <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                 Plot
+                 <span class="caret"></span>
+                 </a>
+                 <ul class="dropdown-menu">
+                    <li><a href="maxtemp.html">Max Temperature</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <li><a href="windspeed.html">Wind</a></li>
+                 </ul>
+              </li>
+              <li><a class="active" href="comparison.html">Comparison</a></li>
+              <li><a href="convertcsv.htm">Data</a></li>
+           </ul>
+        </div>
+     </div>
+  </nav>
+</div>
+<h1><center>Comparison</center></h1>
+
+<div class="row">
+  <div class="col-sm-6 col-xs-6">
+   <img class="img-responsive" src="resources/fig1.png" alt="Max Temp">
+  </div>
+  <div class="col-sm-6 col-xs-6">.
+ <img class="img-responsive" src="resources/fig3.png" alt="Cloudiness">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-xs-6">
+   <img class="img-responsive" src="resources/fig4.png" alt="Wind Speed">
+  </div>
+  <div class="col-sm-6 col-xs-6">
+ <img class="img-responsive" src="resources/fig2.png" alt="Humidity">
+  </div>
+
+</div>
+</body>
+<div class="container-fluid">
+    <div class="row">
+       <div class="col-md-12 col-sm-6 col-xs-6">
+             
+                 <br><br><br><br>
+                 <div class="panel-footer blue"><center>© 2018 CopyRight Rutgers BootCamp</center></div>
+             
+         </div>
+</html>

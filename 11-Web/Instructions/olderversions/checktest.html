@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherpyBootStrap1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/weatherpy.css">
+</head>
+
+<body>
+    <div class="container" >
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                
+                <h1>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                    <a href="Index.html">
+                        <button class="btn btn-primary" type="button"> Lattitude</button>
+                        <span class="badge"></span>
+                    </a>
+                </h1>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Plots 
+                                    <span class="caret"></span>
+                                </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="MaxTemperature.html">MaxTemperature</a></li>
+                            <li><a href="Cloudiness.html">Humidity</a></li>
+                            <li><a href="Humidity.html">Cloudiness</a></li>
+                            <li><a href="WindSpeed.html">WindSpeed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Comparision.html">Comparision</a></li>
+                    <li><a href="CityData.html">Data</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="rowblock">
+                    <h1>Summary:Lattitude vs.X</h1>
+                    <hr>
+                    <ul class="media-list">
+                        <li class="media">
+                            <div class="media-body">
+                                <img class="media-object" src="images/output_10_0.png" height="200" width="200" alt="..." />
+                                <P class>The Purpose of this project was to analyze how weather changes
+                                    as you get closer to the equator.To accomplish this analysis,weather
+                                    first pulled data from the OpenWeatherMAp API to assemble a
+                                    dataset on over 500 cities.
+
+                                </p>
+                                <p >After assembling the dataset,we used Matplotlib to plot various aspects of the weather vs.lattitude
+                                    .Factors we looked at included: temperature,cloudiness,wind speed,and humidity.This site
+                                    provides the source data and M visualizations created as part of the analysis, as well
+                                    as explanations and description of any trends and correaltions witnessed.
+
+                                </p>
+                            </div>
+
+
+
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="rowblock1">
+                    <h1>Visulizations</h1>
+                    <hr>
+                    <div class=" col-md-6">
+                        <a href="MaxTemperature.html" class="thumbnail">
+                    <img src="./images/output_10_0.png"   alt="...">
+                </a>
+                    </div>
+                    <div class=" col-md-6">
+                        <a href="Humidity.html" class="thumbnail">
+                    <img src="./images/output_12_0.png"  alt="...">
+                </a>
+                    </div>
+                    <div class=" col-md-6">
+                        <a href="Clodiness.html" class="thumbnail">
+                    <img src="./images/output_14_0.png"   alt="...">
+                </a>
+                    </div>
+                    <div class=" col-md-6">
+                        <a href="WindSpeed.html" class="thumbnail">
+                    <img src="./images/output_16_0.png"  alt="...">
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div>
+                <span> Some copyright info or perhaps some author.</span>
+        </div>
+    </footer>
+</body>
